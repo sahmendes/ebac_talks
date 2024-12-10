@@ -8,14 +8,69 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
-            <p class="hero__text">O maior evento de tecnologia do Brasil começa em 10d 17h 20min 56s</p>
+            <p class="hero__text">O maior evento de tecnologia do Brasil começa em <span id="contador"></span></p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2025 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Garanta sua vaga</a>
+            </div>
         </div>
     </header>
+    <section class="event-1">
+        <div class="container" data-aos="fade-right">
+            <div class="event-1__details">
+                <h2 class="event-1__details__title">Front-end</h2>
+                <p class="event-1__details__description">O front-end refere-se à parte visível e interativa de um site ou aplicação com a qual os usuários interagem diretamente. É a camada da interface do usuário (UI) que se comunica com o back-end (a parte do sistema que processa dados e lógica). O trabalho do desenvolvedor front-end é garantir que a interface seja intuitiva, responsiva (adaptando-se a diferentes dispositivos) e funcional, proporcionando uma boa experiência ao usuário.</p>
+            </div>
+            <img class="event-1__image" src="./images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event-2">
+        <div class="container" data-aos="fade-left">
+            <img class="event-2__image" src="./images/ui-ux.png" alt="UX-UI">
+            <div class="event-2__details">
+                <h2 class="event-2__details__title">UX (User Experience) - UI (User Interface)</h2>
+                <p class="event-2__details__description">UX refere-se à forma como um usuário interage com um produto, serviço ou sistema e as emoções e percepções geradas por essa interação. UI foca na aparência visual e no design dos elementos com os quais o usuário interage.</p>
+            </div>
+        </div>
+    </section>
+    <section class="event-3">
+        <div class="container" data-aos="fade-right">
+            <div class="event-3__details">
+                <h2 class="event-3__details__title">Data Science</h2>
+                <p class="event-3__details__description">Data Science é um campo interdisciplinar que combina técnicas de estatística, computação e conhecimento específico de domínio para extrair conhecimento e insights úteis a partir de dados estruturados e não estruturados.</p>
+            </div>
+            <img class="event-3__image" src="./images/data.png" alt="data-science">
+        </div>
+    </section>
+    <section class="event-4">
+        <div class="container" data-aos="fade-left">
+            <img class="event-4__image" src="./images/backend.png" alt="Back-end">
+            <div class="event-4__details">
+                <h2 class="event-4__details__title">Back-end</h2>
+                <p class="event-4__details__description">O back-end refere-se à parte "invisível" de um sistema ou aplicação responsável pelo processamento, armazenamento e gestão dos dados. Ele funciona nos bastidores, garantindo que a lógica de negócio, banco de dados e servidores trabalhem em conjunto para suportar a interação que ocorre no front-end (a interface visível ao usuário).</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
